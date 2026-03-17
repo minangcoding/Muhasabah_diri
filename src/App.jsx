@@ -10,10 +10,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/auth" element={<Auth />} />
-        <Route path="/capsule" element={<Route path="/capsule" element={<Capsule />} />} />
-        
-        {/* 2. Tambahkan rute admin di sini */}
-        <Route path="/admin" element={<Admin />} /> 
+        {/* PASTIKAN HANYA SATU ROUTE CAPSULE SEPERTI DI BAWAH INI */}
+        <Route path="/capsule" element={<Capsule />} /> 
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );
